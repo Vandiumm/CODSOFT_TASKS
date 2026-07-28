@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="url(#blueGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  <!-- Desktop Monitor -->
+  <rect x="2" y="3" width="20" height="12" rx="2" />
+  <line x1="8" y1="21" x2="16" y2="21" />
+  <line x1="12" y1="15" x2="12" y2="21" />
+  <!-- Tablet -->
+  <rect x="13" y="10" width="8" height="11" rx="1.5" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="1.5"/>
+  <circle cx="17" cy="18.5" r="0.75" fill="currentColor"/>
+  <!-- Phone -->
+  <rect x="2" y="12" width="5" height="9" rx="1" fill="#ffffff" stroke="url(#blueGrad)" stroke-width="1.5"/>
+  <circle cx="4.5" cy="19.5" r="0.5" fill="currentColor"/>
+</svg>

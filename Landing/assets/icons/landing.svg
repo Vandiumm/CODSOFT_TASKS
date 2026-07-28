@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="url(#blueGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  <!-- Browser outline -->
+  <rect x="2" y="3" width="20" height="15" rx="2" />
+  <line x1="2" y1="8" x2="22" y2="8" />
+  <!-- Controls -->
+  <circle cx="5" cy="5.5" r="0.5" fill="currentColor"/>
+  <circle cx="7" cy="5.5" r="0.5" fill="currentColor"/>
+  <circle cx="9" cy="5.5" r="0.5" fill="currentColor"/>
+  <!-- Rocket/Launch -->
+  <path d="M12 10l-1.5 2.5h3L12 10z" fill="url(#blueGrad)" stroke="none"/>
+  <path d="M12 10s3 2.5 3 5.5H9s0-3 3-5.5z" />
+  <path d="M12 18v2M10 19l2 2 2-2" />
+</svg>

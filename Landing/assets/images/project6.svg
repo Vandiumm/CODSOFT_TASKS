@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1F2937" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="#F9FAFB"/>
+  <!-- Top Bar -->
+  <rect width="400" height="40" fill="#ffffff" />
+  <circle cx="20" cy="20" r="5" fill="#EF4444" />
+  <circle cx="35" cy="20" r="5" fill="#F59E0B" />
+  <circle cx="50" cy="20" r="5" fill="#10B981" />
+  <rect x="75" y="12" width="60" height="16" rx="4" fill="url(#pGrad6)"/>
+  
+  <!-- Left menu, right charts dashboard -->
+  <rect x="15" y="55" width="80" height="180" rx="6" fill="url(#pGrad6)" />
+  <rect x="25" y="75" width="60" height="8" rx="4" fill="#374151" />
+  <rect x="25" y="95" width="60" height="8" rx="4" fill="#374151" />
+  <rect x="25" y="115" width="60" height="8" rx="4" fill="#374151" />
+  
+  <!-- Main Grid 1: Stat boxes -->
+  <rect x="110" y="55" width="80" height="45" rx="6" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.02))" />
+  <rect x="120" y="65" width="40" height="6" rx="3" fill="#E5E7EB" />
+  <rect x="120" y="80" width="50" height="10" rx="3" fill="#2563EB" />
+
+  <rect x="202.5" y="55" width="80" height="45" rx="6" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.02))" />
+  <rect x="212.5" y="65" width="40" height="6" rx="3" fill="#E5E7EB" />
+  <rect x="212.5" y="80" width="50" height="10" rx="3" fill="#10B981" />
+
+  <rect x="295" y="55" width="80" height="45" rx="6" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.02))" />
+  <rect x="305" y="65" width="40" height="6" rx="3" fill="#E5E7EB" />
+  <rect x="305" y="80" width="50" height="10" rx="3" fill="#EC4899" />
+
+  <!-- Chart Panel -->
+  <rect x="110" y="112" width="265" height="123" rx="8" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.02))" />
+  <!-- Area chart fill -->
+  <path d="M125 210 l25-30 35 15 45-45 50 15 50-50 v95 z" fill="url(#chartGrad)" />
+  <!-- Line chart stroke -->
+  <path d="M125 180 l25-30 35 15 45-45 50 15 50-50" fill="none" stroke="#2563EB" stroke-width="2" />
+  <circle cx="280" cy="135" r="4" fill="#2563EB" />
+</svg>
