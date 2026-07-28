@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YS.Creates Calculator - A premium, modern, elegant, and fully responsive calculator web application. Built with HTML5, CSS3, and Vanilla JavaScript.">
+  <title>YS.Creates | Premium Calculator</title>
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="logo">YS.<span>Creates</span></a>
+      <span class="divider"></span>
+      <h1 class="project-title">Calculator</h1>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="app-main">
+    <div class="calculator-container">
+      
+      <!-- Calculator Card -->
+      <div class="calculator-card" id="calculator">
+        <!-- Display Screen -->
+        <div class="calculator-display">
+          <!-- Expression History (Line 1) -->
+          <div class="display-history" id="display-history" aria-live="polite"></div>
+          <!-- Active Input & Result (Line 2) -->
+          <div class="display-input" id="display-input" aria-live="polite">0</div>
+        </div>
+
+        <!-- Buttons Grid -->
+        <div class="calculator-grid">
+          <!-- Row 1: Clears, Percent, Backspace -->
+          <button type="button" class="btn btn-clear btn-all-clear" data-action="all-clear">AC</button>
+          <button type="button" class="btn btn-clear btn-single-clear" data-action="clear">C</button>
+          <button type="button" class="btn btn-operator" data-action="percent">%</button>
+          <button type="button" class="btn btn-operator btn-backspace" data-action="backspace" aria-label="Backspace">⌫</button>
+
+          <!-- Row 2: Numbers 7, 8, 9, Operator Division -->
+          <button type="button" class="btn btn-number" data-value="7">7</button>
+          <button type="button" class="btn btn-number" data-value="8">8</button>
+          <button type="button" class="btn btn-number" data-value="9">9</button>
+          <button type="button" class="btn btn-operator" data-action="divide">÷</button>
+
+          <!-- Row 3: Numbers 4, 5, 6, Operator Multiplication -->
+          <button type="button" class="btn btn-number" data-value="4">4</button>
+          <button type="button" class="btn btn-number" data-value="5">5</button>
+          <button type="button" class="btn btn-number" data-value="6">6</button>
+          <button type="button" class="btn btn-operator" data-action="multiply">×</button>
+
+          <!-- Row 4: Numbers 1, 2, 3, Operator Subtraction -->
+          <button type="button" class="btn btn-number" data-value="1">1</button>
+          <button type="button" class="btn btn-number" data-value="2">2</button>
+          <button type="button" class="btn btn-number" data-value="3">3</button>
+          <button type="button" class="btn btn-operator" data-action="subtract">-</button>
+
+          <!-- Row 5: Plus/Minus, Zero, Decimal, Operator Addition -->
+          <button type="button" class="btn btn-number" data-action="toggle-sign">±</button>
+          <button type="button" class="btn btn-number" data-value="0">0</button>
+          <button type="button" class="btn btn-number" data-value=".">.</button>
+          <button type="button" class="btn btn-operator" data-action="add">+</button>
+
+          <!-- Row 6: Equals Button (Spans 4 columns) -->
+          <button type="button" class="btn btn-equals" data-action="calculate">=</button>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p class="footer-brand">YS.Creates</p>
+      <p class="footer-copy">&copy; 2026 YS.Creates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript script -->
+  <script src="script.js"></script>
+</body>
+</html>

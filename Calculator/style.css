@@ -1,0 +1,529 @@
+/* ==========================================================================
+   YS.Creates Calculator Web Application Style Sheet
+   Premium Light Theme, Modern, Elegant, and Fully Responsive (HTML5/CSS3 Only)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Design System & Variables
+   -------------------------------------------------------------------------- */
+:root {
+  --primary: #2563EB;
+  --primary-dark: #1D4ED8;
+  --accent: #3B82F6;
+  --background: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --text-main: #111827;
+  --text-muted: #6B7280;
+  --border: #E5E7EB;
+  
+  /* Specialized Button Colors */
+  --clear-bg: #FEE2E2;
+  --clear-text: #EF4444;
+  --clear-hover: #FCA5A5;
+  
+  --number-bg: #FFFFFF;
+  --number-text: #111827;
+  --number-border: #E2E8F0;
+  --number-hover: #F1F5F9;
+
+  /* Gradients */
+  --blue-gradient: linear-gradient(135deg, #2563EB, #3B82F6);
+  --blue-gradient-hover: linear-gradient(135deg, #1D4ED8, #2563EB);
+  --body-gradient: radial-gradient(circle at top right, rgba(37, 99, 235, 0.05), transparent 40%),
+                   radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.03), transparent 30%);
+
+  /* Shadows */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 10px 20px -3px rgba(17, 24, 39, 0.04), 0 4px 6px -2px rgba(17, 24, 39, 0.02);
+  --shadow-card: 0 25px 50px -12px rgba(37, 99, 235, 0.08), 0 10px 20px -5px rgba(0, 0, 0, 0.02);
+  --shadow-button: 0 4px 12px rgba(37, 99, 235, 0.1);
+  --shadow-button-hover: 0 6px 16px rgba(37, 99, 235, 0.2);
+
+  /* Constants */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset & Typography Setup
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  background-image: var(--body-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   3. Header Section
+   -------------------------------------------------------------------------- */
+.app-header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: var(--border);
+  display: block;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   4. Main Content Area & Calculator Card
+   -------------------------------------------------------------------------- */
+.app-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 400px;
+  animation: cardFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Calculator Card */
+.calculator-card {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft Decorative Glow behind Card */
+.calculator-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(37, 99, 235, 0.03);
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   5. Calculator Display
+   -------------------------------------------------------------------------- */
+.calculator-display {
+  background-color: #F1F5F9;
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.015);
+  overflow: hidden;
+}
+
+.display-history {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-align: right;
+  min-height: 22px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+.display-history::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.display-input {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: right;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  line-height: 1.2;
+  transition: font-size 0.15s ease;
+}
+
+.display-input::-webkit-scrollbar {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   6. Buttons Grid Layout
+   -------------------------------------------------------------------------- */
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Base Button Styling */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  height: 60px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: var(--transition);
+  user-select: none;
+}
+
+/* Button Press/Tactile Effect */
+.btn:active {
+  transform: scale(0.94);
+}
+
+/* Focus Ring for accessibility */
+.btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* Number Buttons styling */
+.btn-number {
+  background-color: var(--number-bg);
+  color: var(--number-text);
+  border-color: var(--number-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-number:hover {
+  background-color: var(--number-hover);
+  border-color: #CBD5E1;
+}
+
+/* Operator Buttons styling */
+.btn-operator {
+  background: var(--blue-gradient);
+  color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-operator:hover {
+  background: var(--blue-gradient-hover);
+  box-shadow: var(--shadow-button);
+}
+
+/* Backspace custom label size adjustment */
+.btn-backspace {
+  font-size: 1.05rem;
+}
+
+/* Clear Buttons styling (Light Red) */
+.btn-clear {
+  background-color: var(--clear-bg);
+  color: var(--clear-text);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-clear:hover {
+  background-color: var(--clear-hover);
+  color: #FFFFFF;
+}
+
+/* Equal Button styling (attractive, spanning all columns) */
+.btn-equals {
+  grid-column: span 4;
+  background: var(--blue-gradient);
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  font-weight: 600;
+  height: 64px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-button);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-equals::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1D4ED8, #1E40AF);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.btn-equals:hover {
+  box-shadow: var(--shadow-button-hover);
+  transform: translateY(-1px);
+}
+
+.btn-equals:hover::before {
+  opacity: 1;
+}
+
+.btn-equals:active {
+  transform: scale(0.96);
+}
+
+/* --------------------------------------------------------------------------
+   7. Footer Section
+   -------------------------------------------------------------------------- */
+.app-footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px; /* Spacer */
+  gap: 8px;
+}
+
+.footer-brand {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   8. CSS Animations
+   -------------------------------------------------------------------------- */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. Mobile & Tablet Responsiveness (Responsive Breakpoints)
+   -------------------------------------------------------------------------- */
+
+/* Tablet Viewports and Laptops (Under 768px) */
+@media (max-width: 768px) {
+  .app-main {
+    padding: 30px 16px;
+  }
+  
+  .calculator-card {
+    padding: 24px;
+  }
+}
+
+/* Mobile Portrait Viewports (Under 480px) */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 16px 0;
+  }
+  
+  .header-container {
+    gap: 12px;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .calculator-card {
+    padding: 20px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .calculator-display {
+    padding: 16px 18px;
+    height: 105px;
+    margin-bottom: 20px;
+  }
+
+  .display-input {
+    font-size: 2rem;
+  }
+
+  .calculator-grid {
+    gap: 10px;
+  }
+
+  .btn {
+    height: 54px;
+    font-size: 1.05rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .btn-equals {
+    height: 56px;
+    font-size: 1.2rem;
+    border-radius: var(--radius-sm);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   10. Hidden Easter Egg Animations & Styles
+   -------------------------------------------------------------------------- */
+.egg-rain-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px solid var(--primary);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+  padding: 18px 36px;
+  border-radius: var(--radius-pill);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  animation: eggMessagePopup 4.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.raining-egg {
+  position: fixed;
+  top: -60px;
+  z-index: 1500;
+  pointer-events: none;
+  font-size: var(--egg-size);
+  animation: var(--egg-anim) var(--egg-duration) linear var(--egg-delay) forwards;
+}
+
+@keyframes eggMessagePopup {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  10%, 85% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+}
+
+@keyframes egg-fall-drift {
+  0% {
+    top: -60px;
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(var(--egg-drift)) rotate(var(--egg-rot));
+  }
+}
+
+@keyframes egg-fall-bounce {
+  0% {
+    top: -60px;
+    transform: translateX(0) rotate(0deg);
+  }
+  70% {
+    top: var(--bounce-floor);
+    transform: translateX(calc(var(--egg-drift) * 0.7)) rotate(calc(var(--egg-rot) * 0.7));
+  }
+  82% {
+    top: calc(var(--bounce-floor) - 100px);
+    transform: translateX(calc(var(--egg-drift) * 0.82)) rotate(calc(var(--egg-rot) * 0.82));
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(var(--egg-drift)) rotate(var(--egg-rot));
+  }
+}
+
+@media (max-width: 480px) {
+  .egg-rain-message {
+    font-size: 1.05rem;
+    padding: 12px 20px;
+  }
+}
+
