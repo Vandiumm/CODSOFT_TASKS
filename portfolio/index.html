@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yash Sharma - B.Tech Computer Science Student & Web Developer Portfolio">
+  <title>Yash Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Blobs -->
+  <div class="ambient-glow">
+    <div class="glow-blob-1"></div>
+    <div class="glow-blob-2"></div>
+    <div class="glow-blob-3"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">Yash Sharma</a>
+      <button class="mobile-toggle" aria-label="Toggle navigation" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="hero-content animate-load delay-1">
+        <span class="subheading">B.Tech Computer Science Student</span>
+        <h1>Hi, I'm <span class="hero-name">Yash Sharma</span></h1>
+        <p class="hero-description">
+          I am a passionate Web Developer, Java Programmer and AI & Machine Learning enthusiast who enjoys building modern, responsive and user-friendly websites. I love solving programming problems and continuously learning new technologies.
+        </p>
+        <div class="btn-group animate-load delay-2">
+          <a href="Yash Sharma resume.pdf" download="Yash Sharma resume.pdf" class="btn btn-primary">
+            <!-- Download Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <!-- Mail Icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="hero-profile-area animate-load delay-3">
+        <div class="profile-img-container">
+          <img src="profile1.jpeg" alt="Yash Sharma Profile Picture" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-img-area">
+        <div class="about-img-frame">
+          <div class="about-img-container">
+            <img src="img2.jpeg" alt="About Yash Sharma">
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <p>
+          Hello! I'm Yash Sharma, a passionate B.Tech Computer Science student with a strong interest in Web Development, Java Programming, Artificial Intelligence and Software Development.
+        </p>
+        <p>
+          I enjoy creating responsive websites with clean designs and writing efficient code. My goal is to become a highly skilled Software Engineer and continuously improve my technical knowledge while working on real-world projects.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <span class="highlight-num">4.0+</span>
+            <span class="highlight-txt">GPA/Tech Drive</span>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-num">10+</span>
+            <span class="highlight-txt">Core Skills</span>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-num">6+</span>
+            <span class="highlight-txt">Key Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">A curation of languages, tools, and technical frameworks I use to bring modern applications to life.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill 1: HTML5 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 22l10-4 10 4L12 2z"/></svg>
+          </div>
+          <span class="skill-name">HTML5</span>
+        </div>
+        <!-- Skill 2: CSS3 -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 2h20l-2 18-8 4-8-4L2 2z"/></svg>
+          </div>
+          <span class="skill-name">CSS3</span>
+        </div>
+        <!-- Skill 3: JavaScript -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm12.5 12.3c0-.8-.6-1.3-1.6-1.7l-.8-.3c-.6-.2-.9-.4-.9-.7s.3-.5.8-.5c.5 0 .8.2.9.6h1.7c-.1-1.1-.9-1.9-2.1-2.1v-1.1h-1.3v1.1c-1.1.2-1.9 1-1.9 2.1s.6 1.3 1.6 1.7l.8.3c.7.3.9.5.9.8s-.4.6-.9.6c-.6 0-1-.3-1.1-.9H9c.1 1.2 1 2 2.1 2.2V20h1.3v-1.2c1.2-.2 2.1-.9 2.1-2.2z"/></svg>
+          </div>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <!-- Skill 4: Java -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 15.5v2h20v-2H2zm10-13C8.5 2.5 6 5.5 6 9h12c0-3.5-2.5-6.5-6-6.5zM4 10.5v3h16v-3H4z"/></svg>
+          </div>
+          <span class="skill-name">Java</span>
+        </div>
+        <!-- Skill 5: Python -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3.5h3.5v3.5H11zm5.5-5.5h-3.5V8.5h3.5V11.5z"/></svg>
+          </div>
+          <span class="skill-name">Python</span>
+        </div>
+        <!-- Skill 6: React -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4 11H8V8h8v5z"/></svg>
+          </div>
+          <span class="skill-name">React</span>
+        </div>
+        <!-- Skill 7: Git -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 12c0 1.2-.4 2.3-1 3.2l3-3-3-3c.6.9 1 2 1 2.8zM5 12c0-.9.4-2 1-2.8L3 12.2l3 3c-.6-.9-1-2.1-1-3.2zm7-7c-.9 0-2 .4-2.8 1l3 3 3-3c-.9-.6-2.1-1-3.2-1zm0 14c.9 0 2-.4 2.8-1l-3-3-3 3c.9.6 2.1 1 3.2 1z"/></svg>
+          </div>
+          <span class="skill-name">Git</span>
+        </div>
+        <!-- Skill 8: GitHub -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          </div>
+          <span class="skill-name">GitHub</span>
+        </div>
+        <!-- Skill 9: Responsive Design -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v10H4V6zm-2-2h20v14H2V4zm6 16h8v2H8v-2z"/></svg>
+          </div>
+          <span class="skill-name">Responsive Design</span>
+        </div>
+        <!-- Skill 10: Problem Solving -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <span class="skill-name">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A collection of custom applications designed with a focus on UI polish, responsiveness, and performance.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Modern Wireframe SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <circle cx="160" cy="95" r="45" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4"/>
+              <circle cx="160" cy="95" r="65" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="8 4"/>
+              <rect x="90" y="70" width="140" height="50" rx="6" stroke="#00f2fe" stroke-width="2"/>
+              <line x1="100" y1="85" x2="220" y2="85" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              <line x1="100" y1="100" x2="180" y2="100" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">Responsive personal portfolio showcasing projects and skills with clean HTML5 and modern CSS3 transitions.</p>
+            <a href="#home" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Calculator Mockup SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <rect x="110" y="25" width="100" height="140" rx="12" fill="#131135" stroke="#8b5cf6" stroke-width="2"/>
+              <rect x="122" y="38" width="76" height="24" rx="4" fill="#050314" stroke="#00f2fe" stroke-width="1.5"/>
+              <circle cx="137" cy="80" r="8" fill="#3b82f6"/>
+              <circle cx="160" cy="80" r="8" fill="#3b82f6"/>
+              <circle cx="183" cy="80" r="8" fill="#d946ef"/>
+              <circle cx="137" cy="103" r="8" fill="#ffffff" fill-opacity="0.1"/>
+              <circle cx="160" cy="103" r="8" fill="#ffffff" fill-opacity="0.1"/>
+              <circle cx="183" cy="103" r="8" fill="#ffffff" fill-opacity="0.1"/>
+              <circle cx="137" cy="126" r="8" fill="#ffffff" fill-opacity="0.1"/>
+              <circle cx="160" cy="126" r="8" fill="#ffffff" fill-opacity="0.1"/>
+              <circle cx="183" cy="126" r="8" fill="#ffffff" fill-opacity="0.1"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Calculator</h3>
+            <p class="project-desc">A beautiful, dark-themed calculator user interface utilizing linear grids and glowing accent states.</p>
+            <a href="#about" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Landing Page Mockup SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <rect x="40" y="30" width="240" height="130" rx="8" fill="#131135" stroke="#3b82f6" stroke-width="1.5"/>
+              <rect x="52" y="42" width="50" height="10" rx="3" fill="#8b5cf6"/>
+              <rect x="52" y="65" width="120" height="18" rx="4" fill="#ffffff" fill-opacity="0.8"/>
+              <rect x="52" y="90" width="90" height="8" rx="2" fill="#94a3b8"/>
+              <rect x="52" y="105" width="105" height="8" rx="2" fill="#94a3b8"/>
+              <rect x="52" y="125" width="45" height="16" rx="8" fill="#00f2fe"/>
+              <circle cx="220" cy="95" r="28" stroke="#d946ef" stroke-width="3" stroke-dasharray="6 3"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Landing Page</h3>
+            <p class="project-desc">Modern, high-converting responsive landing page designed with strict layout structures and hero sections.</p>
+            <a href="#about" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Weather App Mockup SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <circle cx="160" cy="80" r="25" fill="#3b82f6" fill-opacity="0.3" stroke="#00f2fe" stroke-width="2"/>
+              <path d="M145 92c0-8 6.5-14.5 14.5-14.5.3 0 .6 0 .9.1C163.6 71.3 170 66 177.5 66c8.6 0 15.5 6.9 15.5 15.5 0 .7 0 1.4-.2 2.1C198 84.7 202 90.3 202 97c0 8.3-6.7 15-15 15h-42c-8.3 0-10-6.7-10-15z" fill="#ffffff" fill-opacity="0.9" stroke="#8b5cf6" stroke-width="1.5"/>
+              <line x1="155" y1="122" x2="151" y2="132" stroke="#00f2fe" stroke-width="2" stroke-linecap="round"/>
+              <line x1="167" y1="122" x2="163" y2="132" stroke="#00f2fe" stroke-width="2" stroke-linecap="round"/>
+              <line x1="179" y1="122" x2="175" y2="132" stroke="#00f2fe" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">A graphical weather application interface designed to showcase atmospheric conditions and dynamic forecasts.</p>
+            <a href="#about" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- To-Do App Mockup SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <rect x="90" y="35" width="140" height="120" rx="10" fill="#131135" stroke="#8b5cf6" stroke-width="2"/>
+              <rect x="105" y="55" width="12" height="12" rx="3" fill="#00f2fe"/>
+              <line x1="127" y1="61" x2="205" y2="61" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              <rect x="105" y="85" width="12" height="12" rx="3" fill="#00f2fe"/>
+              <line x1="127" y1="91" x2="185" y2="91" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              <rect x="105" y="115" width="12" height="12" rx="3" fill="none" stroke="#94a3b8" stroke-width="2"/>
+              <line x1="127" y1="121" x2="195" y2="121" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">To-Do App</h3>
+            <p class="project-desc">Minimalist, fluid task management interface that tracks progress, lists filters, and manages priorities.</p>
+            <a href="#about" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <!-- Login Page Mockup SVG -->
+            <svg class="thumb-artwork" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="190" fill="#0b0826"/>
+              <rect x="100" y="30" width="120" height="130" rx="12" fill="#131135" stroke="#d946ef" stroke-width="2"/>
+              <circle cx="160" cy="62" r="14" fill="#3b82f6" fill-opacity="0.3" stroke="#3b82f6" stroke-width="2"/>
+              <rect x="115" y="90" width="90" height="14" rx="4" fill="#050314" stroke="#border-color" stroke-width="1"/>
+              <circle cx="123" cy="97" r="2.5" fill="#94a3b8"/>
+              <rect x="115" y="112" width="90" height="14" rx="4" fill="#050314" stroke="#border-color" stroke-width="1"/>
+              <circle cx="123" cy="119" r="2.5" fill="#94a3b8"/>
+              <rect x="115" y="135" width="90" height="15" rx="7.5" fill="#00f2fe"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Login Page</h3>
+            <p class="project-desc">A premium authentication interface emphasizing responsive centering, glass layout form fields, and security alerts.</p>
+            <a href="#about" class="project-btn">
+              Learn More
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <div class="resume-box">
+        <h2>Resume</h2>
+        <p>You can download my latest resume below.</p>
+        <a href="Yash Sharma resume.pdf" download="Yash Sharma resume.pdf" class="btn-large">
+          <!-- Big Download Icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          ⬇ Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have an internship, project suggestion, or just want to say hi? Reach out using any channel below!</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Phone Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Phone</h3>
+          <a href="tel:7988700508" class="contact-link">7988700508</a>
+        </div>
+
+        <!-- Email Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Email</h3>
+          <a href="mailto:2105yashsharma@gmail.com" class="contact-link">2105yashsharma@gmail.com</a>
+        </div>
+
+        <!-- LinkedIn Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/yash-sharma-356789322" target="_blank" rel="noopener noreferrer" class="contact-link" id="linkedinUrl">https://www.linkedin.com/in/yash-sharma-356789322</a>
+          <button class="btn-copy" id="copyBtn" onclick="copyLinkedIn()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy LinkedIn Link
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">Yash Sharma</div>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/yash-sharma-356789322" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:2105yashsharma@gmail.com">Email</a></li>
+          <li><a href="tel:7988700508">Phone</a></li>
+        </ul>
+        <a href="#home" class="btn-top" aria-label="Scroll back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Yash Sharma. All Rights Reserved.</span>
+        <span>Made with ❤️ using HTML &amp; CSS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Interactivity -->
+  <script>
+    // Copy LinkedIn Link functionality
+    function copyLinkedIn() {
+      const urlText = document.getElementById('linkedinUrl').href;
+      navigator.clipboard.writeText(urlText).then(() => {
+        const btn = document.getElementById('copyBtn');
+        const originalHTML = btn.innerHTML;
+        btn.classList.add('copied');
+        btn.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px; height:14px; fill:none;"><polyline points="20 6 9 17 4 12"/></svg>
+          Copied!
+        `;
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = originalHTML;
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+    // Responsive Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileToggle.classList.toggle('open');
+    });
+
+    // Close Menu on Link Click and Update Active Link
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        navLinks.classList.remove('active');
+        mobileToggle.classList.remove('open');
+        
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Highlight menu links on scroll
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section');
+      const scrollPos = window.scrollY + 120; // offset header height
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      if (current) {
+        links.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
